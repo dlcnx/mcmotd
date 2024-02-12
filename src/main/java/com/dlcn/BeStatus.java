@@ -42,8 +42,9 @@ public class BeStatus {
             server_info.level_name = info_arr[7];
             server_info.gamemode = info_arr[8];
             // server_info.??? = info_arr[9];
-            server_info.port = Integer.parseInt(info_arr[10]);
-            server_info.port6 = Integer.parseInt(info_arr[11]);
+            // The following items may not exist on unofficial servers
+            // server_info.port = Integer.parseInt(info_arr[10]);
+            // server_info.port6 = Integer.parseInt(info_arr[11]);
             // server_info.??? = info_arr[12];
             // close udp client
             client.close();
